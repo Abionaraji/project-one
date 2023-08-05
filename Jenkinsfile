@@ -12,7 +12,7 @@ pipeline{
         }
         stage('Build Maven'){
             steps{
-                sh 'mvn verify install -DskipUnitTests'
+                sh 'mvn verify -DskipUnitTests'
             }
         }
         stage('Test Unit'){
