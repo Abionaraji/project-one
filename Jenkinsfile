@@ -12,7 +12,7 @@ pipeline{
         }
         stage('Build Maven'){
             steps{
-                sh 'mvn verify -DskipUnitTests'
+                sh 'mvn clean install'
             }
         }
         stage('Test Unit'){
